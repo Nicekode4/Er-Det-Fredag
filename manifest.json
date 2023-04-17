@@ -1,6 +1,7 @@
 {
     "name": "Er det fredag?",
     "short_name": "Fredag?",
+    "id": "./index",
     "icons": [
         {
           "src": "favicon.ico",
@@ -22,6 +23,5 @@
     "background_color": "#c9a214",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
     "start_url": "/index.html"
   }
