@@ -1,11 +1,12 @@
 {
     "name": "Er det fredag?",
     "short_name": "Fredag?",
+    "description": "An app to show if it is friday",
     "id": "./index",
     "icons": [
         {
           "src": "favicon.ico",
-          "sizes": "64x64 32x32 24x24 16x16",
+          "sizes": "256x256",
           "type": "image/x-icon"
         },
         {
