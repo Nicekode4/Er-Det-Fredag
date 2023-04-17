@@ -1,6 +1,7 @@
 {
     "name": "Er det fredag?",
     "short_name": "Fredag?",
+    "description": "An app to show if it is friday",
     "id": "./index",
     "icons": [
         {
