@@ -20,7 +20,7 @@
       ],
     "theme_color": "#b021f3",
     "background_color": "#c9a214",
-    "display": "browser",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/index.html"
