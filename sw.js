@@ -1,5 +1,5 @@
 // Define a cache name
-const CACHE_NAME = 'my-pwa-cache';
+const CACHE_NAME = 'my-pwa-cache-v1';
 
 // List the files you want to cache
 const urlsToCache = [
