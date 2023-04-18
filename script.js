@@ -9,27 +9,42 @@ let date = new Date();
 let dayOfWeekNumber = date.getDay();
 let nameOfDay;
 let quote;
+const noArray = [
+    "Nej, ",
+    "Næh, ",
+    "Nope, ",
+    "Niks, "
+]
 
+const AfterArray = [
+    "ikke idag er det",
+    "det er ikke",
+    "men om et par dage er det",
+    "vent lidt, så er det"
+]
+const random1 = Math.floor(Math.random() * noArray.length)
+const random2 = Math.floor(Math.random() * AfterArray.length)
 switch(dayOfWeekNumber){
     case 0: 
         nameOfDay = 'Sunday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
+        
         break;
     case 1:
         nameOfDay = 'Monday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
         break;
     case 2:
         nameOfDay = 'Tuesday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
         break;
     case 3:
         nameOfDay = 'Wednesday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
         break;
     case 4:
         nameOfDay = 'Thursday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
         break;
     case 5:
         nameOfDay = 'Friday';
@@ -37,7 +52,7 @@ switch(dayOfWeekNumber){
         break;
     case 6:
         nameOfDay = 'Saturday';
-        quote = 'Nej det er ikke';
+        quote = noArray[random1] + AfterArray[random2] + `<a href="https://da.wikipedia.org/wiki/Fredag">fredag</a>`
         break;
 
 }
