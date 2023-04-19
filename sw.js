@@ -1,5 +1,5 @@
 // Define a cache name
-const CACHE_NAME = 'my-pwa-cache-v2';
+const CACHE_NAME = 'my-pwa-cache-v5';
 
 // List the files you want to cache
 const urlsToCache = [
@@ -22,9 +22,17 @@ self.addEventListener('install', event => {
   );
   console.log('Service Worker has been installed')
 });
-// // self.addEventListener('activate', event => {
-// // 	console.log('Service Worker has been activated');
-// // })
+self.addEventListener('activate', event => {
+	console.log('serviceworker has been activated...')
+	event.waitUntil(
+		caches.keys().then(keys => {
+			return Promise.all(keys
+				.filter(key => key !== staticCacheName)
+				.map(key => caches.delete(key)))
+		})
+	)
+	return;
+})
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
