@@ -15,7 +15,7 @@ const noArray = [
     "Nope, ",
     "Niks, ",
     "Ikke på nuværende tidspunkt, ",
-    "Desværre,",
+    "Desværre, ",
     "Det afvises, ",
     "Negativt, ",
     "Udelukket ",
